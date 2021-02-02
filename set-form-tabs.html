@@ -1,0 +1,491 @@
+<ul class="my-tabs-nav">
+                  <li class="my-tabs "><a href="javascript:void(0);" >General</a></li>
+                  <li class="my-tabs "><a href="javascript:void(0);" >Attributes</a></li>
+                  <li class="my-tabs "><a href="javascript:void(0);" >Inventory Tracking</a></li>
+                  <li class="my-tabs "><a href="javascript:void(0);" >Add Variant</a></li>
+                  <li class="my-tabs "><a href="javascript:void(0);" >Tabs</a></li>
+                </ul>
+                  <div class="tabs-content">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Product's Name</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Provider's Name</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-12">
+                        <div class="mark-inv-img">
+                          <h6>Product Images:</h6>
+                          <label class="add-here">
+                          <input type="file" name="pictures" id="multiImageSelet" multiple="" hidden>
+                          <i class="fa fa-plus"></i>
+                          </label>
+                          <ul class="pictures">
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-12">
+                        <div class="form-group">
+                          <label>Description</label>
+                          <textarea id="editor1"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label>Full Description</label>
+                          <textarea id="editor2"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Stock Keeping Unit</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>select Category</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="add-prod-status">
+                          <h6>Status</h6>
+                          <ul>
+                            <li><label><input type="radio" name="status"/><span>Active</span></label></li>
+                            <li><label><input type="radio" name="status"/><span>Inactive</span></label></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group ml-1">
+                          <label for="from">From :</label>
+                          <label class="d-flex text-nowrap">
+                          <input type="text" class="ml-2 form-control mr-3 datepicker" id="gen_start_date" autocomplete="off"/>
+                          <i class="fa fa-calendar mt-2 fs-18"></i>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group ml-1">
+                          <label for="to">To :</label>
+                          <label class="d-flex text-nowrap">
+                          <input type="text" class="ml-2 form-control mr-3 datepicker" id="gen_end_date" autocomplete="off"/>
+                          <i class="fa fa-calendar mt-2 fs-18"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Material</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Select Coupon</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Fit/Form</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Select Deal</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Tags</label>
+                          <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                            <option value="AL">Option 1</option>
+                            <option value="WY">Option 2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Select Brand</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                            <option>Option 1</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 text-center">
+                      <a href="product.php" class="btn btn-danger">Back</a>
+                      <button class="btn btn-success" onclick="nextPrev(event)">Next</button>
+                    </div>
+                  </div>
+                  <div class="tabs-content">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Add Attibute</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Frontend Type</label>
+                          <select class="form-control">
+                            <option>Select Frontend Type</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Attribute Type</label>
+                          <select class="js-example-basic-multiple" name="state[]" multiple="multiple">
+                            <option value="AL">Option 1</option>
+                            <option value="WY">Option 2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clone-here">
+                    </div>
+                    <div class="add-more-btn">
+                      <button class="btn btn-success btn-md " onClick="addMore()"><i class="fa fa-plus-circle"></i> Add More</button>
+                    </div>
+                    <div class="w-100 text-center">
+                      <button class="btn btn-danger" onclick="prev(event)">Back</button>
+                      <button class="btn btn-success" onclick="nextPrev(event)">Next</button>
+                    </div>
+                  </div>
+                  <div class="tabs-content">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Buying Price</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                          <label>Main Price</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Sale Price</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                        <div class="form-group ml-1">
+                          <label for="from">Arrival Date</label>
+                          <label class="d-flex text-nowrap">
+                          <input type="text" name="arrival" class="ml-2 form-control mr-3 datepicker simpdatepicker" autocomplete="off"/>
+                          <i class="fa fa-calendar mt-2 fs-18"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <h6><strong>Sale Time</strong></h6>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group ml-1">
+                          <label for="from">From:</label>
+                          <label class="d-flex text-nowrap">
+                          <input type="text" class="ml-2 form-control mr-3 datepicker" id="start_date" autocomplete="off"/>
+                          <i class="fa fa-calendar mt-2 fs-18"></i>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group ml-1">
+                          <label for="from">To:</label>
+                          <label class="d-flex text-nowrap"> 
+                          <input type="text" class="ml-2 form-control mr-3 datepicker" id="end_date" autocomplete="off"/>
+                          <i class="fa fa-calendar mt-2 fs-18"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="arranged-label"><input type="checkbox"/><span>Show main price after applying special price</span></label>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Stock Available</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="inventory-toggle mt-32">
+                          <div>Inventory Tracking</div>
+                          <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Quantity (Total)</label>
+                          <input type="number" min="0" class="form-control" placeholder="0"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Available Quantity</label>
+                          <input type="number" min="0" class="form-control" placeholder="0"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Low Stack Threshold</label>
+                          <input type="number" min="0" class="form-control" placeholder="0"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="form-group">
+                          <label>Total quanity in stock</label>
+                          <input type="number" min="0" class="form-control" placeholder="0"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="inventory-toggle">
+                          <div>Show low stock warning on product page</div>
+                          <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                        <div class="inventory-toggle">
+                          <div>Notify admin for low stock</div>
+                          <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <h6 class=" mt-32"> <strong>Available Sizes in Product</strong></h6>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Order</th>
+                                <th>Thumbnail</th>
+                                <th>Name</th>
+                                <th>Size</th>
+                                <th>Colors</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td><img class="img-40 img-radius" src="assets/images/avatar-4.jpg"></td>
+                                <td>Lorem Ipsum</td>
+                                <td>XXL</td>
+                                <td>Black</td>
+                                <td>01</td>
+                                <td><button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete-modal">Delete</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 text-center">
+                      <button class="btn btn-danger" onclick="prev(event)">Back</button>
+                      <button class="btn btn-success" onclick="nextPrev(event)">Next</button>
+                    </div>
+                  </div>
+                  <div class="tabs-content">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Attribute</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-9 col-md-8 col-sm-8 col-12"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="mark-inv-img">
+                          <h6>Add Images:</h6>
+                          <label class="add-here">
+                          <input type="file" name="pictures" id="multiImageSelet_more" multiple="" hidden>
+                          <i class="fa fa-plus"></i>
+                          </label>
+                          <ul class="pictures_more">
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Size</label>
+                          <select class="form-control">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>SKU No.</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Quantity</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-6 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Price</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-4 col-12">
+                        <div class="form-group">
+                          <label>Discounted Price ($)</label>
+                          <input type="text" class="form-control"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="clone-here-more">
+                    </div>
+                    <div class="add-more-btn">
+                      <button class="btn btn-warning btn-md " onclick="addSomeMore()"><i class="fa fa-plus-circle"></i> Add More Size</button>
+                    </div>
+                    <div class="w-100 text-center">
+                      <button class="btn btn-danger" onclick="prev(event)">Back</button>
+                      <button class="btn btn-success" onclick="nextPrev(event)">Next</button>
+                    </div>
+                  </div>
+                  <div class="tabs-content">
+                    <div class="row mt-32">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Sl. No.</th>
+                                <th>Tab's Name</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Global Description</td>
+                                <td>
+                                  <label class="switch float-left">
+                                  <input type="checkbox">
+                                  <span class="slider-toggle round"></span>
+                                  </label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Global Comments</td>
+                                <td>
+                                  <label class="switch float-left">
+                                  <input type="checkbox">
+                                  <span class="slider-toggle round"></span>
+                                  </label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Global Reviews</td>
+                                <td>
+                                  <label class="switch float-left">
+                                  <input type="checkbox">
+                                  <span class="slider-toggle round"></span>
+                                  </label>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>Global Specifications</td>
+                                <td>
+                                  <label class="switch float-left">
+                                  <input type="checkbox">
+                                  <span class="slider-toggle round"></span>
+                                  </label>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-100 text-center">
+                      <button class="btn btn-danger" onclick="prev(event)">Back</button>
+                      <a href="javascript:void(0);" data-target="#add-sccess" data-toggle="modal"  class="btn btn-success">Next</a>
+                    </div>
+                  </div>
