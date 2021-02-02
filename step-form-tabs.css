@@ -1,0 +1,30 @@
+.tabs-content{
+	margin: 10px 0;
+	padding: 15px;
+	display: none;
+	clear: both;
+}
+.my-tabs-nav {
+    list-style: none;
+    padding: 0;
+}
+.my-tabs-nav li {
+    float: left;
+}
+.my-tabs-nav a {
+    background: #eaeaed;
+    color: #000;
+    display: block;
+    font-weight: 600;
+    border-right: 1px solid #e1dcdc;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.my-tabs-nav .tab-active a {
+    background: #84b807de;
+    border-bottom-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: default;
+}
